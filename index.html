@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/style.css" />
+    <title>Wargi.id</title>
+  </head>
+  <body>
+    <!-- heder -->
+    <header>
+      <div class="container shadow2">
+        <div class="brand">
+          <a href=""> <img src="asset/image/getstar.png" alt="" /> War<span style="color: chocolate">gi</span></a>
+        </div>
+        <div class="navbar" id="nav">
+          <nav>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li>
+                <div class="nav-menu">
+                  <a href="">Menu <img src="asset/image/down-arrow.png" alt="" /></a>
+                </div>
+                <ul class="sub-menu shadow">
+                  <li>
+                    <a class="sub-content" onclick="scrolling(2)"><img class="img" src="asset/image/soda.png" alt="" /> Drink</a>
+                  </li>
+                  <li>
+                    <a class="sub-content" onclick="scrolling(3)"><img class="img" src="asset/image/food-delivery.png" alt="" /> Food</a>
+                  </li>
+                  <li>
+                    <a class="sub-content" onclick="scrolling(4)"><img class="img" src="asset/image/snack.png" alt="" /> Snack</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a onclick="scrolling(6)">About</a></li>
+            </ul>
+          </nav>
+          <div class="user">
+            <div class="media-sosial">
+              <a href="https://www.instagram.com/gumelar_wicaksono/"><img src="asset/image/instagram.png" alt="" /></a>
+              <a href="https://web.facebook.com/gumelar.wicaksono.12"><img src="asset/image/facebook.png" alt="" /></a>
+              <a href="https://twitter.com/gumelar_ica"><img src="asset/image/twitter.png" alt="" /></a>
+            </div>
+            <a onclick="scrolling(5)">log in</a>
+            <a href="">sign up</a>
+          </div>
+        </div>
+        <div class="menu-togle" onclick="menuTogle()">
+          <img src="asset/image/menu-nav.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- secsion main -->
+    <main>
+      <div class="container-home">
+        <div class="home shadow">
+          <div class="content">
+            <h1>war<span style="color: #d2691e">gi</span></h1>
+            <p>Nikmatnya santapan dan minuman sejuta kesan di wargi.id</p>
+            <button onclick="scrolling(1)">Pesan di sini</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-main" id="click1">
+        <article>
+          <!-- drink -->
+          <div class="container-drink btn-more" id="click2">
+            <div class="judul">
+              <h2>List Daftar Menu Kami</h2>
+              <h3>Drink</h3>
+              <span class="line"></span>
+            </div>
+            <div class="main-container-card">
+              <div class="card shadow" data-name="n-1">
+                <img src="asset/image/boba-avocado-tea.jpg" alt="" />
+                <h3>Avocado Tea</h3>
+                <p>IDR <span>7.000</span></p>
+              </div>
+              <div class="card shadow" data-name="n-2">
+                <img src="asset/image/boba-cocolate.jpg" alt="" />
+                <h3>Boba Cocolate</h3>
+                <p>IDR <span>8.000</span></p>
+              </div>
+              <div class="card shadow" data-name="n-3">
+                <img src="asset/image/es-tea-mint.jpg" alt="" />
+                <h3>Es Tea Mint</h3>
+                <p>IDR <span>8.000</span></p>
+              </div>
+              <div class="card shadow" data-name="n-4">
+                <img src="asset/image/oreo-cocolate.jpg" alt="" />
+                <h3>Oreo Cocolate</h3>
+                <p>IDR <span>8.000</span></p>
+              </div>
+            </div>
+            <button>more <img src="asset/image/right.png" alt="" /></button>
+          </div>
+          <!-- fod -->
+          <div class="container-food btn-more" id="click3">
+            <div class="judul">
+              <h3>Food</h3>
+              <span class="line"></span>
+            </div>
+            <div class="main-container-card">
+              <div class="card shadow" data-name="n-5">
+                <img src="asset/image/Salmon.jpg" alt="" />
+                <h3>Salmon</h3>
+                <p>IDR <span>20.000</span></p>
+              </div>
+              <div class="card shadow" data-name="n-6">
+                <img src="asset/image/Asparagus.jpg" alt="" />
+                <h3>Asparagus</h3>
+                <p>IDR <span>20.000</span></p>
+              </div>
+              <div class="card shadow" data-name="n-7">
+                <img src="asset/image/Meat.jpg" alt="" />
+                <h3>Meat</h3>
+                <p>IDR <span>20.000</span></p>
+              </div>
+              <div class="card shadow" data-name="n-8">
+                <img src="asset/image/salmon-takiyaki.jpg" alt="" />
+                <h3>Salmon Takiyaki</h3>
+                <p>IDR <span>20.000</span></p>
+              </div>
+            </div>
+            <button>more <img src="asset/image/right.png" alt="" /></button>
+          </div>
+          <!-- snack ciki ciki -->
+          <div class="container-snack btn-more" id="click4">
+            <div class="judul">
+              <h3>Snack</h3>
+              <span class="line"></span>
+            </div>
+            <div class="main-container-card">
+              <div class="card shadow" data-name="n-9">
+                <img src="asset/image/kentang-goreng.jpg" alt="" />
+                <h3>French fries</h3>
+                <p>IDR <span>7.000</span></p>
+              </div>
+              <div class="card shadow" data-name="n-10">
+                <img src="asset/image/kentang.jpg" alt="" />
+                <h3>Crispy Potatoes</h3>
+                <p>IDR <span>7.000</span></p>
+              </div>
+              <div class="card shadow" data-name="n-11">
+                <img src="asset/image/popcron.jpg" alt="" />
+                <h3>popcron</h3>
+                <p>IDR <span>7.000</span></p>
+              </div>
+              <div class="card shadow" data-name="n-12">
+                <img src="asset/image/donat.jpg" alt="" />
+                <h3>Donat</h3>
+                <p>IDR <span>7.000</span></p>
+              </div>
+            </div>
+            <button>more <img src="asset/image/right.png" alt="" /></button>
+          </div>
+
+          <!-- from penjualan -->
+          <div class="from">
+            <div class="card-from" data-target="n-1">
+              <div class="bagian1">
+                <img src="asset/image/boba-avocado-tea.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Avocado</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>8.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- dua -->
+            <div class="card-from" data-target="n-2">
+              <div class="bagian1">
+                <img src="asset/image/boba-cocolate.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Boba Cocolate</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>8.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- tiga -->
+            <div class="card-from" data-target="n-3">
+              <div class="bagian1">
+                <img src="asset/image/es-tea-mint.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Es Tea Mint</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>8.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- empat -->
+            <div class="card-from" data-target="n-4">
+              <div class="bagian1">
+                <img src="asset/image/oreo-cocolate.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Oreo Cocolate</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>8.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- lima -->
+            <div class="card-from" data-target="n-5">
+              <div class="bagian1">
+                <img src="asset/image/Salmon.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Salmon</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>20.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- enam -->
+            <div class="card-from" data-target="n-6">
+              <div class="bagian1">
+                <img src="asset/image/Asparagus.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Asparagus</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>20.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- tujuh -->
+            <div class="card-from" data-target="n-7">
+              <div class="bagian1">
+                <img src="asset/image/Meat.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Meat</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>20.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- delapan -->
+            <div class="card-from" data-target="n-8">
+              <div class="bagian1">
+                <img src="asset/image/salmon-takiyaki.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Salmon Takiyaki</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>20.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- sembilan -->
+            <div class="card-from" data-target="n-9">
+              <div class="bagian1">
+                <img src="asset/image/kentang-goreng.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>French fries</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>7.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- sepuluh -->
+            <div class="card-from" data-target="n-10">
+              <div class="bagian1">
+                <img src="asset/image/kentang.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Crispy Potatoes</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>7.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- sebelas -->
+            <div class="card-from" data-target="n-11">
+              <div class="bagian1">
+                <img src="asset/image/popcron.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>popcron</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>7.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+            <!-- duabelas -->
+            <div class="card-from" data-target="n-12">
+              <div class="bagian1">
+                <img src="asset/image/donat.jpg" alt="" />
+                <div class="close">
+                  <img src="asset/image/close.png" alt="" />
+                </div>
+              </div>
+              <h3>Donat</h3>
+              <div class="bintang">
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <img src="asset/image/star.png" alt="" />
+                <span style="color: gray; margin-left: 10px">( 100 )</span>
+              </div>
+              <h4>IDR <span>7.000</span></h4>
+              <table>
+                <tr>
+                  <td>Nama</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan nama" /></td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan alamat" /></td>
+                </tr>
+                <tr>
+                  <td>total pemesanan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="masukan jumlah pesanan" /></td>
+                </tr>
+                <tr>
+                  <td>pesan</td>
+                  <td>:</td>
+                  <td><input type="text" placeholder="silahkan tinggalkan pesan" /></td>
+                </tr>
+                <tr>
+                  <td>total harga</td>
+                  <td>:</td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+              <button onclick="buy()">Buy Now</button>
+            </div>
+          </div>
+          <!-- pemesanan online -->
+          <article>
+            <div class="pemesanan judul2">
+              <h3>Pemesanan Online</h3>
+              <span class="line"></span>
+              <div class="card-pemesanan-content shadow">
+                <div class="content">
+                  <img src="asset/image/delivery.png" alt="" />
+                  <h4>Delivery Order</h4>
+                  <p>Layanan antar gratis setiap pembelian menu makanan kami. Area layanan hingga 15 KM</p>
+                </div>
+                <div class="content">
+                  <img src="asset/image/menu (1).png" alt="" />
+                  <h4>Ala Carte</h4>
+                  <p>Menikmati hidangan kami langsung di rumah/kantor Anda.Minimal order IDR 200,000.-</p>
+                </div>
+                <div class="content">
+                  <img src="asset/image/plate.png" alt="" />
+                  <h4>Prasmanan</h4>
+                  <p>Untuk setiap acara spesial Anda. Informasi dapat langsung hubungi kantor kami.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- login -->
+          <div class="container-login judul2" id="click5">
+            <h3>Login</h3>
+            <span class="line"></span>
+            <div class="login-user">
+              <h2>war<span style="color: chocolate">gi</span></h2>
+              <div class="user">
+                <img src="asset/image/user.png" alt="" />
+                <input type="text" placeholder="Username" />
+              </div>
+              <div class="password">
+                <img src="asset/image/lock.png" alt="" />
+                <input type="password" placeholder="Password" />
+              </div>
+              <div>
+                <button>Login</button>
+              </div>
+              <div>
+                <p>sign up</p>
+              </div>
+            </div>
+          </div>
+          <!-- about -->
+          <article>
+            <div class="container-about" id="click6">
+              <div class="about judul2">
+                <h3>About</h3>
+                <span class="line"></span>
+                <div class="card-about-content shadow">
+                  <h5>War<span style="color: chocolate">gi</span>( <em style="color: rgb(78, 72, 72); font-size: 20px">Warung Digital</em> )</h5>
+                  <div class="content">
+                    <img src="asset/image/getstar.png" alt="" />
+                    <p>
+                      Wargi ( <em style="color: rgb(78, 72, 72)">Warung Digital</em> ) merupakan Warung swasta yang terbentuk perorangan. Didirikan pada tanggal 25 april 2022 berlokasi di Tasikmalaya, yang kemudian ditetapkan sebagai warung
+                      tongkrongan sekaligus sebagai kantor pusat dan administrasinya. Pada awalnya wargi ini hanya berupa warung tongkrongan biasa makan yang diberi nama "warung bu ros". Warung Digital bergerak dibidang makanan minuman
+                      serta snack yang spesifik yaitu minuman ala anak tongkrongan, dimana alasan untuk mendirikan warung ini adalah kebetulan karna kurangnya sarana tempat nongkrong di desa terutama yang menyediakan cemilan dan minuman
+                      spesifik ala anak tongkrongan di desa pedalaman. Dengan melihat kesempatan inilah, maka didirikanlah wargi.id pada tahun 2022. Bidang usaha ini masih dalam pengembangan hingga saat ini, dimana terdapat beberapa usaha
+                      sejenis yang dikelola oleh pihak lain walau tempat nya terbilang jauh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </article>
+        <!-- profile -->
+        <aside>
+          <div class="judul3">
+            <h3>Pendiri warung</h3>
+            <span class="line"></span>
+          </div>
+          <div class="card-profile shadow">
+            <img class="bg" src="asset/image/bg-profile.jpg" alt="" />
+            <img class="circel" src="asset/image/profil1.jfif" alt="" />
+            <table>
+              <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>Gumelar Wicaksono</td>
+              </tr>
+              <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td>Tasikmalaya</td>
+              </tr>
+              <tr>
+                <td>Pekerjaan</td>
+                <td>:</td>
+                <td>CEO Wargi.id</td>
+              </tr>
+              <tr>
+                <td>Pendidikan</td>
+                <td>:</td>
+                <td>Dicoding.com</td>
+              </tr>
+              <tr>
+                <td>kelas</td>
+                <td>:</td>
+                <td>Web Pemrograman Dasar</td>
+              </tr>
+            </table>
+            <span>
+              <a href="https://www.instagram.com/gumelar_wicaksono/"><img src="asset/image/instagram.png" alt="" /></a>
+              <a href="https://web.facebook.com/gumelar.wicaksono.12"><img src="asset/image/facebook.png" alt="" /></a>
+              <a href="https://twitter.com/gumelar_ica"><img src="asset/image/twitter.png" alt="" /></a>
+            </span>
+          </div>
+        </aside>
+        <!-- end profile -->
+      </div>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <p>CopyRight &#169; 2022_War<span style="color: chocolate">gi</span>.id</p>
+        <p>untuk info lebih lanjut / saran untuk kami hubungi di :</p>
+        <p>Whatsapp <img src="asset/image/whatsapp.png" alt="" />+6282122394638</p>
+      </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="asset/function.js"></script>
+  </body>
+</html>

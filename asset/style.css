@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,300&family=PT+Serif&family=Plus+Jakarta+Sans:wght@500&family=Poppins:ital,wght@0,200;1,200;1,300&family=Quicksand:wght@300;500;700&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: 'Plus Jakarta Sans', serif;
+  background-image: url('image/bg2.jpg');
+  background-attachment: fixed;
+}
+.shadow {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+}
+.shadow2 {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+}
+/* heder */
+.container {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  padding: 5px;
+}
+header .brand {
+  padding: 10px 0;
+}
+header .brand a {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'PT Serif', sans-serif;
+}
+header .brand a img {
+  height: 40px;
+}
+header .navbar {
+  display: flex;
+}
+header nav {
+  margin-right: 280px;
+}
+.navbar ul {
+  display: flex;
+  padding: 25px 0;
+  width: 100%;
+}
+.navbar ul li a {
+  margin: 0 20px;
+  font-size: 17px;
+  color: chocolate;
+  cursor: pointer;
+}
+.navbar ul li a:hover {
+  color: rgb(102, 117, 102);
+}
+.navbar ul li:nth-child(2) img {
+  width: 18px;
+  margin-left: 6px;
+}
+.navbar .sub-menu {
+  display: none;
+}
+.navbar ul li:hover .sub-menu {
+  display: block;
+  width: 200px;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+.navbar .sub-content {
+  display: flex;
+  padding-top: 10px;
+}
+.navbar .sub-content .img {
+  margin-right: 10px;
+}
+header .user {
+  font-size: 14px;
+  margin: 0 15px;
+  padding: 20px 0;
+}
+header .user .media-sosial img {
+  height: 15px;
+}
+header .user a {
+  color: chocolate;
+  margin: 0 4px;
+  cursor: pointer;
+}
+header .user a:hover {
+  color: rgb(102, 117, 102);
+}
+header .menu-togle {
+  padding: 20px 0;
+  display: none;
+}
+header .menu-togle img {
+  height: 20px;
+}
+
+/* responsif */
+@media (min-width: 412px) and (max-width: 767px) {
+  header .navbar {
+    display: none;
+    width: 50%;
+    right: 0;
+    height: 100vh;
+    position: fixed;
+    margin-top: 60px;
+    justify-items: center;
+    padding-top: 20px;
+    position: absolute;
+    background-color: white;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .navbar ul li {
+    padding: 2px 0;
+  }
+  .navbar ul li:nth-child(2) .nav-menu {
+    display: flex;
+  }
+  .navbar ul li:nth-child(2) .nav-menu img {
+    margin-left: 15px;
+  }
+
+  header .show {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+  }
+  header .menu-togle {
+    display: flex;
+  }
+}
+/* end heder */
+/* ARTIKEL */
+main {
+  padding: 130px 0;
+}
+.container-home {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.home {
+  width: 100%;
+  padding: 100px 20px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+  font-size: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.home p {
+  color: rgb(117, 59, 18);
+  margin-top: 10px;
+}
+
+.home button {
+  font-size: large;
+  margin-top: 60px;
+  padding: 12px 40px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: chocolate;
+}
+.home button:hover {
+  background-color: white;
+  border: 2px solid chocolate;
+  transition: all 0.3s;
+  color: black;
+}
+
+.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  overflow-x: hidden;
+  justify-content: center;
+}
+.judul {
+  padding-top: 90px;
+}
+.judul h2 {
+  color: brown;
+}
+.judul h3 {
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: chocolate;
+  font-size: inherit;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.line {
+  background-color: gray;
+  display: block;
+  height: 2px;
+  margin-bottom: 10px;
+}
+.main-container-card {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: 4px;
+  width: 220px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.card img {
+  width: 200px;
+  margin-left: 10px;
+  display: block;
+  align-items: center;
+}
+.card h3 {
+  margin-left: 10px;
+  padding: 4px;
+  color: chocolate;
+}
+.card p {
+  padding-top: 10px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  color: rgb(108, 214, 108);
+  font-size: 15px;
+}
+.card p span {
+  color: #686464;
+  display: inline-block;
+  font-size: 14px;
+  font-style: initial;
+  font-weight: bold;
+}
+
+/* card from pembelian */
+.from {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.card-from h3 {
+  color: brown;
+  padding: 5px 10px;
+}
+.card-from h4 {
+  color: rgb(108, 214, 108);
+}
+.card-from h4 span {
+  color: gray;
+  padding-left: 10px;
+}
+.card-from {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.945);
+  display: none;
+  padding: 15px 30px;
+  border-radius: 7px;
+}
+.card-from .bagian1 .close img {
+  width: 50px;
+  cursor: pointer;
+}
+.card-from .bagian1 .close img:hover {
+  transform: rotate(80deg);
+  transition: all 0.5s;
+}
+.card-from .bagian1 {
+  display: flex;
+  justify-content: end;
+}
+.card-from .bagian1 img {
+  width: 150px;
+  margin-left: 240px;
+}
+
+.card-from .bintang {
+  display: flex;
+  padding: 20px 0;
+}
+.card-from .bintang img {
+  width: 20px;
+}
+.card-from table input {
+  background: none;
+  outline: none;
+  border: 1px solid gray;
+  margin-left: 20px;
+  padding: 7px;
+  border-radius: 3px;
+}
+.card-from button {
+  margin-top: 10px;
+  background: #25bd229c;
+  color: chocolate;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+.card-from button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid chocolate;
+}
+.from .card-from.active {
+  display: block;
+}
+
+@media (min-width: 412px) and (max-width: 767px) {
+  .card-from {
+    width: 380px;
+    font-size: 14px;
+  }
+  .card-from .bagian1 img {
+    margin-left: 120px;
+  }
+}
+
+/* end card from */
+
+.btn-more button {
+  display: flex;
+  align-items: center;
+  background-color: chocolate;
+  color: white;
+  padding: 10px 30px;
+  margin-left: 430px;
+  margin-top: 20px;
+  border-radius: 1px;
+  border: none;
+}
+
+.btn-more button:hover {
+  background-color: white;
+  border: 2px solid chocolate;
+  color: black;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn-more button img {
+  width: 20px;
+  margin-left: 5px;
+}
+aside {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+aside .judul3 {
+  padding-top: 90px;
+}
+
+aside .judul3 h3 {
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: chocolate;
+  font-size: inherit;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+aside .card-profile {
+  margin: 4px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+  position: relative;
+  z-index: -1;
+}
+.card-profile .bg {
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-profile .circel {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-left: 35px;
+  padding: 15px;
+  position: absolute;
+  right: 140px;
+  top: 120px;
+}
+.card-profile table {
+  margin-top: 70px;
+  font-size: 13px;
+  padding: 10px;
+}
+.card-profile table tr,
+td {
+  margin: 10px 20px;
+  color: rgb(69, 80, 69);
+}
+
+aside .card-profile span {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+aside .card-profile span img {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 20px;
+  margin-left: 4px;
+}
+
+.judul2 h3 {
+  margin-bottom: 10px;
+  color: brown;
+  text-align: center;
+  font-size: 28px;
+}
+.pemesanan {
+  margin-top: 70px;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+}
+.pemesanan .card-pemesanan-content {
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+  padding: 70px;
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+}
+.pemesanan .card-pemesanan-content .content {
+  margin: 5px;
+  padding: 15px;
+}
+.pemesanan .card-pemesanan-content .content h4 {
+  color: brown;
+}
+.pemesanan .card-pemesanan-content .content p {
+  font-size: 16px;
+  text-align: center;
+  color: #666666;
+}
+.container-login h3 {
+  padding-top: 90px;
+}
+
+.login-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  padding: 40px;
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+}
+#login h3 {
+  padding-top: 100px;
+}
+.login-user h2 {
+  font-size: 30px;
+}
+.login-user input {
+  border: none;
+  border-bottom: 1px solid chocolate;
+  outline: none;
+  margin: 20px;
+  background: none;
+}
+.login-user img {
+  width: 20px;
+  margin-top: 15px;
+  left: 500px;
+  float: left;
+}
+.login-user button {
+  background-color: chocolate;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+}
+.login-user button:hover {
+  background-color: white;
+  border: 2px solid chocolate;
+  color: black;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.login-user p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: rgb(121, 121, 151);
+}
+.login-user p:hover {
+  cursor: pointer;
+}
+
+.about {
+  padding-top: 90px;
+  margin-top: 70px;
+  text-align: center;
+  font-size: 28px;
+}
+.about .content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about .card-about-content {
+  margin-left: 30px;
+  padding: 40px;
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+}
+
+.card-about-content .content p {
+  font-size: 17px;
+  text-align: justify;
+  padding: 30px;
+  color: rgb(131, 138, 148);
+}
+.about .content img {
+  margin-top: 20px;
+}
+
+/* responsif main */
+@media (min-width: 412px) and (max-width: 767px) {
+  main {
+    padding: 90px 0;
+  }
+  .judul {
+    padding-top: 70px;
+    align-items: center;
+    display: block;
+    margin: 40px;
+  }
+  .judul h2 {
+    margin-left: 10px;
+  }
+  .lis {
+    display: none;
+  }
+
+  .btn-more button {
+    margin-left: 70px;
+  }
+
+  aside {
+    margin-top: 60px;
+  }
+  aside .card-profile {
+    width: 100%;
+    position: relative;
+  }
+  .card-profile .bg {
+    width: 470px;
+  }
+  .card-profile .circel {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -20px;
+    top: 200px;
+  }
+  .card-profile table {
+    font-size: 17px;
+  }
+  .pemesanan {
+    align-items: center;
+    width: 100%;
+  }
+  .pemesanan .card-pemesanan-content {
+    margin-left: 20px;
+    width: 500px;
+    display: block;
+  }
+
+  .login-user {
+    margin-left: 40px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    align-items: center;
+    width: 100%;
+  }
+  .about .card-about-content {
+    margin-left: 40px;
+    width: 500px;
+  }
+  aside .judul3 h3 {
+    background: none;
+    color: brown;
+    margin-left: 140px;
+    font-size: 28px;
+  }
+}
+
+/* foter */
+footer .container-footer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  padding: 30px 0;
+}
+footer img {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 20px;
+}
+footer :nth-child(2) {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #666666;
+}
+footer :nth-child(3) {
+  color: #666666;
+  font-size: 15px;
+}
+@media (min-width: 412px) and (max-width: 767px) {
+  footer .container-footer {
+    padding-bottom: 70px;
+  }
+} ;
