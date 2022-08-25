@@ -569,6 +569,13 @@ aside .card-profile span img {
   .main-container-card .card h3 {
     padding-left: 10px;
   }
+  .card-from {
+    position: relative;
+  }
+  .card-from .bagian1 .close img {
+    position: relative;
+    margin-right: 20px;
+  }
 
   .judul {
     padding-top: 70px;
