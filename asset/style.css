@@ -569,7 +569,6 @@ aside .card-profile span img {
   .main-container-card .card h3 {
     padding-left: 10px;
   }
-
   .judul {
     padding-top: 70px;
     padding-left: 70px;
@@ -602,11 +601,12 @@ aside .card-profile span img {
     position: absolute;
     width: 200px;
     height: 200px;
-    left: -20px;
+    left: 20px;
     top: 200px;
   }
   .card-profile table {
-    font-size: 17px;
+    font-size: 15px;
+    margin-left: 50px;
   }
   .pemesanan {
     align-items: center;
